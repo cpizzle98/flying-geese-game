@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Flying Geese</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E8B57">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Flying Geese">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Flying Geese</h1>
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+        <div class="instructions">
+            <p>Press SPACEBAR or click to make the goose fly!</p>
+            <p>Avoid the obstacles and try to get the highest score!</p>
+        </div>
+        <div class="score-display">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+        </div>
+        <div class="game-controls">
+            <button id="pauseBtn" class="control-btn">⏸️ Pause</button>
+            <button id="soundBtn" class="control-btn">🔊 Sound</button>
+            <button id="statsBtn" class="control-btn">📊 Stats</button>
+            <button id="modeBtn" class="control-btn">🎮 Mode</button>
+        </div>
+        
+        <div class="advanced-controls">
+            <div class="mode-selector">
+                <label for="gameModeSelect">Game Mode:</label>
+                <select id="gameModeSelect" class="mode-select">
+                    <option value="classic">Classic</option>
+                    <option value="timeAttack">Time Attack</option>
+                    <option value="survival">Survival</option>
+                    <option value="zen">Zen Mode</option>
+                </select>
+            </div>
+            
+            <div class="customization-panel">
+                <h3>Customization</h3>
+                <div class="custom-option">
+                    <label for="gooseColorPicker">Goose Color:</label>
+                    <input type="color" id="gooseColorPicker" value="#FFFFFF">
+                </div>
+                <div class="custom-option">
+                    <label for="trailToggle">Trail Effect:</label>
+                    <input type="checkbox" id="trailToggle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
