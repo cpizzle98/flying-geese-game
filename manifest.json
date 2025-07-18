@@ -1,0 +1,28 @@
+{
+  "name": "Flying Geese Game",
+  "short_name": "Flying Geese",
+  "description": "A fun Flappy Bird-style game with a flying goose",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#87CEEB",
+  "theme_color": "#2E8B57",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "scope": "./",
+  "prefer_related_applications": false
+}
